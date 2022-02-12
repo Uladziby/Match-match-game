@@ -1,0 +1,70 @@
+
+
+.header {
+    background-color: darkgray;
+    display: flex;
+    justify-content: space-around;
+    min-height: 3.2rem;
+    background-color: #2196f3;
+    font-size: 1.2rem;
+
+    &_menu {
+        display: flex;
+        flex: 1 10rem;
+        max-width: 50vw;
+    }
+    &_newPlayer {
+        display: flex;
+    }
+    &_nameUser {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: grey;
+        font-size: 1.2rem;
+    }
+}
+
+@mixin btn_header {
+    cursor: pointer;
+    box-sizing: border-box;
+    margin-right: 1rem;
+    background-color: #2196f3;
+    width: 9.6rem;
+    border: 0px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin btn_hover {
+    background-color: #1e88e5;
+}
+
+.btn_about,
+.btn_score,
+.btn_settings {
+    @include btn_header;
+}
+
+.btn_about:hover {
+    @include btn_hover;
+}
+
+.btn_score:hover {
+    @include btn_hover;
+}
+
+.btn_settings:hover {
+    @include btn_hover;
+}
+
+.btn_player {
+    margin: 5px 0;
+    @include btn_header;
+}
+.btn_player:hover {
+    background-color: white;
+    color: #2196f3;
+}

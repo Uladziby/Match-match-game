@@ -1,0 +1,14 @@
+.settings_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90vh;
+
+    div {
+        color: white;
+        font-size: 1.4rem;
+        justify-content: center;
+        display: flex;
+        flex: 1;
+    }
+}
